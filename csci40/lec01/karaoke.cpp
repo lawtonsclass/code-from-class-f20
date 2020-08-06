@@ -6,7 +6,8 @@ using namespace std;
 #include <chrono>
 #include <thread>
 
-// don't worry about this
+// the pause function stops the program for "seconds" many seconds
+// don't worry about the implementation
 void pause(double seconds) {
   std::this_thread::sleep_for(std::chrono::duration<double>(seconds));
 }
@@ -20,7 +21,7 @@ int main() {
   pause(1);
   cout << "Now!" << endl;
 
-  pause(15.25);
+  pause(20.25);
 
   cout << endl << "The snow glows white\nOn the mountain tonight" << endl;
   pause(3.083);
