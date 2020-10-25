@@ -43,7 +43,7 @@ void printCharsOfStringReverse(string s) {
     string originalS = s;
     // recursively print the smaller string in reverse
     s.erase(0, 1);
-    printCharsOfString(s);
+    printCharsOfStringReverse(s);
     // print the first char of the original string
     cout << originalS.at(0) << endl;
   }
